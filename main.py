@@ -49,7 +49,5 @@ def index():
   # use the variable to render HTML
   return render_template("index.html", q = quote)
 
-
-app.run(host="0.0.0.0",
-        port = 8080,
-        debug = True)
+if __name__ == "__main__":
+  app.run()
